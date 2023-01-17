@@ -20,6 +20,14 @@ body {
      
     padding: 10px; 
    }
+   .menu {
+    margin: 10px 0% 20px 5px; 
+    padding: 5px; 
+    border: 1px solid #333; 
+ 
+     
+    padding: 10px; 
+   }
    .sidebar {
     float: right;
     border: 1px solid #333; 
