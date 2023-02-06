@@ -1,114 +1,404 @@
 body {
   font-family: Arial, Verdana, Helvetica;
-    margin: 0; 
-    background-color: #EAE7DC;
-   }
-   /* content */
-   .content {
-    margin: 10px 23% 20px 5px; 
-    padding: 5px; 
-    height: auto;
-    
-   }
-   .content h1 {
-    
-    text-align: center;
-    font-size: 25px; 
-    margin: 0; 
-    color: rgb(131, 111, 126);
-    text-shadow:0px 0px 10px ;
+  margin: 0;
+  background-color: #ffffff;
+}
 
-   }
-   /* conteiner */
-   
-  /* header */
-   
-  .logo{
-  float:left ;
-  padding-left: 20px;
-   font-weight: bold;
-   position: relative;
-   border: 5px solid #E98074;
-   border-radius: 15px;
-  }
-   h2 {
-    margin-top: 0; 
-    text-align: center;
-   }
-   .header {
-    position: relative;
-    background-color: rgb(0, 0, 0);
-    height: 800px;
+/* content */
+
+
+
+
+.button_next {
+  float: right;
+}
+
+.button_next img {
+  width: 50px;
+  height: 50px;
+}
+
+
+
+
+
+.content {
+  grid-column-start: 1;
+  grid-column-end: 8;
+  grid-row-start: 1;
+  grid-row-end: 9;
+  padding: 10px;
+}
+
+
+
+.content--1 {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+  grid-gap: 15px;
+
+  font-size: 25px;
+}
+
+.content__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content__kids--1 {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 7;
+  box-shadow: 0.7em 0.7em 5px rgba(122, 122, 122, 0.5);
+}
+
+
+.content__kids--2 {
+  grid-column-start: 5;
+  grid-column-end: 8;
+  grid-row-start: 2;
+  grid-row-end: 7;
+  box-shadow: 0.7em 0.7em 5px rgba(122, 122, 122, 0.5);
+}
+
+.head--4 {
+  grid-column-start: 1;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding: 10px;
+
+}
+
+
+
+.content__kids--1:hover {
+  scale: 1.1;
+}
+
+.content__kids--2:hover {
+  scale: 1.1;
+}
+
+.content__course--1 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 7;
+  box-shadow: 0.7em 0.7em 5px rgba(122, 122, 122, 0.5);
+}
+
+.content__course--2 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 2;
+  grid-row-end: 7;
+  box-shadow: 0.7em 0.7em 5px rgba(122, 122, 122, 0.5);
+}
+
+.content__course--3 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 7;
+  grid-row-end: 12;
+  box-shadow: 0.7em 0.7em 5px rgba(122, 122, 122, 0.5);
+}
+
+.content__course--4 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 7;
+  grid-row-end: 12;
+  box-shadow: 0.7em 0.7em 5px rgba(122, 122, 122, 0.5);
+}
+
+/* форма */
+.napoln {
+  text-align: justify;
+  font-size: 10pt;
+}
+.napoln h4 {
+  text-align: left;
+  padding-bottom: 20px;
+  font-size: 30pt;
+}
+.napoln p {
+  font-size: 20pt;
+}
+div.right_col {
+  background-color: rgba(20, 18, 18, 0.1);
+  padding: 30px;
+  margin: 10px auto;
+  border-radius: 10px 10px 10px 10px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.input {
+  font-size: 25px;
+}
+/* header */
+li .logo {
+  text-align: left;
+  font-size: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 10px;
+  margin-right: 60px;
+  margin-left: 20px;
+  font-weight: bold;
+  position: relative;
+  border: 5px solid #E98074;
+  border-radius: 15px;
   color: #ffffff;
-   }
-   .header:before{
-    content: ' ';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.6;
-      background: url(fon.jpg) no-repeat center bottom ;
-   }
-   .header-text{
-    text-align: center;
-    padding-top: 15%;
-    font-size: 50px;
-    position: relative;
-   }
-   .age{
-    font-size: 30px;
-   }
-   .menu {
-    display: block;
-    text-align: right;
-    background-color: rgb(51, 51, 51, 0.5);
-    margin: 10px 0px 5px 5px; 
-    padding: 5px; 
-    padding: 10px;
-    position: relative;
-   }
-   .menu a:hover{
-    color:rgb(103, 103, 121);
-   }
-   a {
-   text-decoration: none;
-   
-   }
-   .menu a{
-    margin: 5%;
-    font-size: 20px;
-    color: #ffffff;
-    position: relative;
-   }
-   /* sidebar */
-   .sidebar {
-    text-align: left;
-    float: right;
-    padding-left: 20px;
-    width: 20%; 
-   height: auto;
-    margin: 0px 0px 20px 10px;
-    font-size: 20px;
-    border-left: 2px solid #4E4E50;
-   }
-   .sidebar a{
-    color:#8E8D8A;
-   }
-   /* conteiner */
-   .conteiner{
-width: 1500px;
-height:auto;
-	margin:auto;
-   }
-   /* footer */
-   .footer {
-    background:rgb(208, 208, 205);; 
-    padding: 5px; 
-    color: #fff; 
-    text-align: right;
-    clear: left;
-    height: 200px;
-   }
+}
+
+h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.header {
+  position: relative;
+  background-color: rgb(0, 0, 0);
+  height: 700px;
+  color: #ffffff;
+}
+
+.header:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  background: url(fon.jpg) no-repeat center bottom;
+}
+
+.header-text {
+  position: fixed;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 60px;
+  position: relative;
+}
+
+.age {
+  font-size: 25px;
+}
+.header{
+  display: grid;
+  grid-template-columns: 1fr ;
+  grid-template-rows: 1fr;
+
+  @media (max-width: 400px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr ;
+  }
+}
+#panel {
+  display: block;
+  margin: auto;
+  width: 100%;
+  font-size: 18px;
+
+}
+
+/* убираем отступы и поля, а также list-style для "ul", 
+			 * и добавляем "position:relative" */
+#panel ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+
+  background-color: rgba(20, 18, 18, 0.7);
+
+}
+
+/* применяем inline-block позиционирование к элементам навигации */
+#panel ul li {
+  margin: 0px -8px 0 0;
+  display: inline-block;
+
+}
+
+/* стилизуем ссылки */
+#panel a {
+  display: block;
+
+  color: #ffffff;
+  font-size: 100%;
+  line-height: 60px;
+  text-decoration: none;
+  padding: 0px 80px 0px 20px;
+}
+
+/* изменяем цвет фона при наведении курсора */
+#panel a:hover {
+  color: #E98074;
+}
+
+#panel ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  z-index: 10;
+  background-color: rgba(20, 18, 18, 0.7);
+}
+
+/* отображаем выпадающий список при наведении */
+#panel ul li:hover>ul {
+  display: inherit;
+
+}
+
+/* первый уровень выпадающего списка */
+#panel ul ul li {
+  min-width: 170px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+
+
+/* footer */
+
+.footer {
+  background: rgb(0, 0, 0);
+  padding-top: 40px;
+  color: #ffffff;
+  clear: left;
+  height: 300px;
+}
+
+.footer_menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+
+  @media (max-width: 400px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+#footer_panel {
+  display: block;
+  
+  width: 100%;
+  font-size: 15px;
+}
+
+#footer_panel ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  font-weight: bold;
+}
+
+#footer_panel ul li {
+  margin: 0px -1px 0 0;
+  display: inline-block;
+
+}
+
+#footer_panel a {
+  display: block;
+  color: #ffffff;
+  font-size: 100%;
+  line-height: 60px;
+  text-decoration: none;
+  padding: 0px 0px 0px 5px;
+}
+
+#footer_panel a:hover {
+  color: #E98074;
+}
+
+#footer_panel ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  font-weight: lighter;
+}
+
+#footer_panel ul li>ul {
+  display: block;
+}
+
+#footer_panel ul ul li {
+  display: list-item;
+  position: relative;
+}
+
+/* maket */
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'content menu'
+    'footer footer';
+  grid-template-columns:1fr 12rem;
+  grid-template-rows: auto 1fr auto;
+
+  @media (max-width: 400px) {
+    grid-template-areas:
+      'header'
+      'menu'
+      'content'
+      'footer';
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 1fr 1fr 3rem;
+  }
+}
+
+
+body>* {}
+
+/* header */
+header {
+  grid-area: header;
+
+}
+
+
+/* content */
+article {
+  grid-area: content;
+
+}
+
+aside a:hover {
+  color: #E98074;
+
+}
+
+aside a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+aside {
+  grid-area: menu;
+  padding-left: 10px;
+  background-color: #000000;
+  float: right;
+  padding-left: 20px;
+  font-size: 25px;
+
+
+}
+
+
+footer {
+
+  grid-area: footer;
+}
