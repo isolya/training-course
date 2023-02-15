@@ -115,6 +115,18 @@ body {
   box-shadow: 0.7em 0.7em 5px rgba(122, 122, 122, 0.5);
 }
 
+.content__course--2:hover{
+  scale: 1.1;
+}
+ .content__course--3 :hover{
+  scale: 1.1;
+ }
+ .content__course--4:hover {
+  scale: 1.1;
+}
+.content__course--1:hover{
+  scale: 1.1;
+}
 /* форма */
 .napoln {
   text-align: justify;
@@ -373,7 +385,14 @@ header {
 /* content */
 article {
   grid-area: content;
-
+padding: 30px 20px 10px 20px;
+text-align: justify;
+/* min-height: 600px; */
+height: auto;
+}
+.imgtext{
+  width: 70%;
+ 
 }
 
 aside a:hover {
