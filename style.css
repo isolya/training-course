@@ -373,7 +373,7 @@ body {
 }
 
 
-body>* {}
+
 
 /* header */
 header {
@@ -391,10 +391,22 @@ text-align: justify;
 height: auto;
 }
 .imgtext{
-  width: 70%;
+  width: 60%;
  
 }
+table td{
+  border:1px solid #ddd;
+}
+.table_img{
+width: 100%;
 
+}
+.table_text{
+  text-align: center;
+padding-top: 60px;
+font-weight: bold;
+font-size: 25px;
+}
 aside a:hover {
   color: #E98074;
 
@@ -403,19 +415,27 @@ aside a:hover {
 aside a {
   color: #ffffff;
   text-decoration: none;
+  font-size: 13px;
 }
 
 aside {
   grid-area: menu;
-  padding-left: 10px;
   background-color: #000000;
   float: right;
-  padding-left: 20px;
-  font-size: 25px;
-
+  padding-left: 15px;
+  color: #ffffff;
+ padding-right: 5px;
+}
+.active {
+  background-color: #E98074;
 
 }
-
+aside li{
+  list-style-type:none;
+  padding-left:20px;
+  padding-right: 5px;
+  padding: 5px 5px 5px 10px;
+}
 
 footer {
 
