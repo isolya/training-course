@@ -1,0 +1,433 @@
+<html>
+
+<head>
+    <title>Python</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+            <div>
+                <nav id="panel">
+                    <ul class="mainmenu">
+                        <li>
+                            <div class="logo">
+                                <p>EAZY LEARNING.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="index.html">Главная</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Курсы</a>
+                            <ul>
+                                <li><a href="course.html">Курсы от 16 лет </a></li>
+                                <li><a href="kids_course.html">Курсы для детей</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="feedback.html">Обратная связь</a>
+                        </li>
+                        <li>
+                            <a href="statyi.html">Контакты</a>
+                        </li>
+                        <li>
+                            <a href="karta.html">Карта сайта</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <p>Python-разработчик </p>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <article>
+
+
+        <h3>3.1 Целые числа</h3>
+        <h2>Целые числа</h2>
+        <p>Переходим к изучению новых объектов языка Python – целых чисел.</p>
+
+        <p>Целые числа – это множество Z из школьного курса математики – все натуральные числа, ноль и обратные им
+            отрицательные числа. Или иными словами целыми числами являются: 0, 5, -5, 345, 45544, -5545 и так далее.</p>
+
+        <p>В Python можно записывать целые числа разными способами:</p>
+
+        <code class="code">n1 = 123<br>
+            n2 = +123<br>
+            n3 = 0<br>
+            n4 = -123<br>
+            n5 = 1_000_000 # 1000000<br>
+            n6 = 1_2_3 # 123<br></code>
+        <p> Причем нельзя при записи использовать следующие варианты:</p>
+
+        <code class="code"># так нельзя<br>
+            n1 = 01<br>
+            n2 = 1,000,000<br>
+            С целыми числами можно выполнять обычные арифметические операции с помощью Python.</code>
+        <br>
+        <br>
+        <center>
+            <table width="70%" cellspacing="0" cellpadding="10">
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p style="text-align: center;"> <b>Оператор</b></p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p> <b>Определение</b></p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p><b>Пример</b></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p style="text-align: center;"> +</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>Сложение</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>print(1 + 12) # 13</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p style="text-align: center;">-</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>Вычитание</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>print(1 - 5) # -4</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p style="text-align: center;">*</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>Умножение</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>print(2 * 5) # 10</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p style="text-align: center;">/</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>Деление с плавающей точкой</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>print(3 / 4) # 0.75</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p style="text-align: center;">//</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>Целочисленное деление</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>print(7 // 4) # 1</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p style="text-align: center;">%</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>Остаток от деления</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>print(7 % 4) # 3</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p style="text-align: center;">**</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>Возведение в степень</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>print(3 ** 5) # 243</p>
+                    </td>
+                </tr>
+
+            </table>
+        </center>
+        <p>Давайте посчитаем с помощью Python несколько примеров. </p>
+        <p>(100+400−600)∗2</p>
+        <code class="code">print((100 + 400 - 600) * 2) # -200</code>
+        <p>5<sup>3</sup>+ 2 <sup>2</sup>+ 100<sup>0</sup></p>
+        <code class="code">print(5 ** 3 + 2 ** 2 + 100 ** 0) # 130</code>
+        <br>
+        <h2>Как ввести целые числа в программу с клавиатуры?</h2>
+        <br>
+        <p>Целые числа имеют тип int. Объекты этого типа занимают в памяти количество байт соизмеримое размерам числа.
+            Например число 0 занимает 24 байта, а 1 000 000 уже 28 байт.</p>
+        <code class="code">print(type(1)) # class 'int'<br></code>
+        <p> Мы уже знаем, что функция input позволяет ввести строковые значения в программу. Это значит, что
+            арифметика работать не будет.</p>
+        <code class="code">a = input() # 4<br>
+            b = input() # 5<br>
+            print(a + b) # 45<br> </code>
+        <p> Чтобы интерпретатор воспринимал числа как числа, а не как строки их нужно явно привести к типу int. Это
+            можно сделать так:</p>
+        <code class="code">a = input() # "4"<br>
+            b = input() # "5"<br>
+        a_int = int(a) # 4<br>
+            b_int = int(b) # 5<br>
+        print(a_int + b_int) # 9</code><br>
+        <p>Python позволяет сокращать размер программ и передавать в качестве аргумента сразу вызов функции, так что
+            программу выше можно сократить.</p>
+        <code class="code">a = int(input()) # 4<br>
+            b = int(input()) # 5<br>
+        print(a + b) # 9<br></code>
+        <p> И даже это не предел: </p>
+        <code class="code">print(int(input()) + int(input())) # 9</code>
+        <br>
+        <h2>Операции деления</h2>
+        <p>Разберем подробнее операции деления. Деление / – это деление с плавающей точкой или, если терминами
+            математики, десятичное деление.</p>
+        <p> 41:5</p>
+        <code class="code">print(41 / 5) # 8.2<br></code>
+        <p>В результате такого деления получается число с плавающей точкой (floating point number). Отличается оно от
+            целого числа наличием точки. Причем, даже если по правилам математики деление дает в остатке 0, то
+            результатом все равно будет являться не целое число.</p>
+        <code class="code">print(40 / 5) # 8.0</code><br>
+        <p>Если в вашем примере есть корни, то они тоже будут давать дробное число в результате.</p>
+        <p> &radic;169 + 3<sup>5</sup> </p>
+        <code class="code">print(169 ** (1/2) + 3 ** 5) # 256.0</code><br>
+        <p> В примере выше мы возводим в степень 1/2, потому что по правилам математики <br></p>
+        <p>Если вас не интересует дробная часть и вы хотите вычислить только целую, тогда следует использовать //.</p>
+        <code class="code">print(41 // 5) # 8<br>
+            print(40 // 5) # 8<br>
+            print(39 // 5) # 7<br></code>
+        <p> В результате таких вычислений всегда получается целое число. По сути целочисленное деление всегда округляет
+            в меньшую сторону.</p>
+        <code class="code">print(-35 // 5) # -7<br>
+            print(-36 // 5) # -8<br>
+            print(36 // -5) # -8<br>
+            print(-40 // 5) # -8<br>
+            print(-41 // 5) # -9<br></code>
+        <p> Если вам нужен остаток от деления, то используйте %.</p>
+        <code class="code">print(43 % 5) # 3<br>
+            print(40 % 5) # 0</code><br>
+        <p> При таком делении в результате может получиться только число от 0 до n-1. Выходит, что для 5 результатом
+            может быть 0,1,2,3,4.</p>
+        <p>На первый взгляд этот оператор может показаться бесполезным, но это совсем не так!</p>
+        <p>К примеру с его помощью можно легко узнать является ли число четным, ведь у четного числа остаток при делении
+            на 2 всегда равен 0.</p>
+        <code class="code">print(10 % 2) # 0<br>
+            print(13 % 2) # 1</code><br>
+        <p>Или если у вас есть ограниченный набор чисел, которые расположены в виде кольца, яркий пример – это
+            настенные часы. </p><br>
+        <center> <img style="width:400px" class="imgtext" src="p13.svg"></center>
+        <br>
+        <p>Как определить куда будет указывать часовая стрелка, если прошло 13 часов? Это можно легко определить для
+            любого количества часов, если сделать замыкание чисел по модулю 12.</p>
+        <code class="code">print(1 % 12) # 1<br>
+            print(13 % 12) # 1</code><br>
+        <p> Все это применимо к любым кольцевым структурам – стадионам, автомагистралям и так далее.</p>
+        <p>Деление с остатком в котором участвуют отрицательные числа может показаться странным.</p>
+        <code class="code">print(-6 % -5) # -1<br>
+            print(-6 % 5) # 4<br>
+            print(6 % -5) # -4<br></code>
+        <p> Вспоминаем про то, что при делении с остатком может получиться только число, которое находится в кольце от 0
+            до n-1.</p>
+        <p>Если посмотреть на пример -6 % 5, то становится понятно, что очевидного ответа -1 в кольце нет, поэтому этот
+            ответ не правильный.</p>
+        <p>Посчитать остаток от деления можно с помощью несложной формулы: a % b == a - (a // b) * b.</p>
+        <p>Если вы попробуете разделить на 0 любым из делений, то интерпретатор выкинет ошибку ZeroDivizionError.</p>
+        <code class="code">print(1 % 0)</code>
+        <br>
+        <center> <img class="imgtext" src="p14.png"></center>
+        <br>
+        <h2>Синтаксический сахар</h2>
+        <p>В Python можно делать сокращения кода, например выражения типа a = a + 4 можно заменить на a += 4. Такие
+            сокращения называются синтаксическим сахаром, и с ними код становится проще и выразительнее.</p>
+
+        <p>Такой трюк можно проделывать и с остальными операторами.</p>
+
+        <code class="code">a = 2<br>
+            a -= 1<br>
+            a *= 5<br>
+            a /= 6<br>
+            a //= 2<br>
+            a %= 4<br>
+            a **= 2</code>
+        <br>
+        <h2>Приоритет операций</h2>
+        <p>При выполнении арифметических вычислений следует учитывать приоритет выполнения каждого оператора. В таблице
+            ниже сверху-вниз идут операторы по уменьшению их приоритета в выражении.</p>
+            <center>
+                <table width="70%" cellspacing="0" cellpadding="10">
+                    <tr>
+                        <td valign="top" class="table_text" valign="top">
+                            <p style="text-align: center;"> <b>Оператор</b></p>
+                        </td>
+                        <td valign="top" class="table_text">
+                            <p> <b>Описание</b></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top" class="table_text" valign="top">
+                            <p style="text-align: center;"> (x)</p>
+                        </td>
+                        <td valign="top" class="table_text">
+                            <p> Скобки</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top" class="table_text" valign="top">
+                            <p style="text-align: center;"> **</p>
+                        </td>
+                        <td valign="top" class="table_text">
+                            <p> Возведение в степень</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top" class="table_text" valign="top">
+                            <p style="text-align: center;"> -x, +x</p>
+                        </td>
+                        <td valign="top" class="table_text">
+                            <p> Унарные операторы</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top" class="table_text" valign="top">
+                            <p style="text-align: center;">*, /, //, %</p>
+                        </td>
+                        <td valign="top" class="table_text">
+                            <p> Умножение, деление</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top" class="table_text" valign="top">
+                            <p style="text-align: center;"> +, -</p>
+                        </td>
+                        <td valign="top" class="table_text">
+                            <p> 	Плюс, минус</p>
+                        </td>
+                       
+                    </tr>
+    
+                </table>
+            </center>
+
+        <p>Рассмотрим код:</p>
+
+        <code class="code">x = 5<br>
+            print(-x**2 + (5+x)) # -15</code><br>
+           <p> При расчете арифметического примера сначала выполнится выражение в скобках (5+x), затем x ** 2, после этого
+            к нему добавится -, и только потом две части сложатся.</p>
+
+        <p><b>Если не хватило теории:</b><br>
+           <a href="https://docs.python.org/3/reference/expressions.html#operator-precedence"> Operator precedence</a></p>
+        <br> <a class="button_next" href="python3.2.html"><img src="next.png"></a>
+    </article>
+    <aside>
+        1 Введение<br>
+        <ul>
+
+            <li><a href="python1.1.html">1.1 О курсе</a></li><br>
+            <li><a href="python1.2.html">1.2 Установка Python и IDE</a></li><br>
+            
+        </ul>
+        2  Данные<br>
+        <ul>
+            <li><a href="python2.1.html">2.1 Учим компьютер выводить результат</a></li><br>
+            <li><a href="python2.2.html">2.2 Типы данных и переменные</a></li><br>
+            <li><a href="python2.3.html">2.3 Возводим костыли</a></li><br>
+           
+        </ul>
+        3  Арифметические операции<br>
+        <ul>
+            <li class="active"><a href="python3.1.html">3.1 Целые числа</a></li><br>
+            <li><a href="python3.2.html">3.2 Числа с плавающей точкой </a></li><br>
+            <li><a href="python3.3.html">3.3 Битовые операции</a></li><br>
+            
+        </ul>
+        4  Основы Python: простые структуры данных и основные конструкции
+        <ul>
+            <li><a href="python4.1.html">4.1 Условия</a></li><br>
+            <li><a href="python4.1.html">4.2 Циклы</a></li><br>
+            <li><a href="python4.3.html">4.3 Работа со строками</a></li><br>
+           
+        </ul>
+        5 Основы Python: составные структуры данных и дополнения<br>
+        <ul>
+            <li><a href="python5.1.html">5.1 Списки и кортежи</a></li><br>
+            <li><a href="python5.2.html">5.2 Множества и словари</a></li><br>
+            <li><a href="python5.3.html">5.3 Стек, очерерь, куча и дек </a></li><br>
+            <li><a href="python5.4.html">5.4 Модули и библиотеки</a></li><br>
+        </ul>
+        6 Заключение<br>
+        <ul>
+            <li><a href="python6.1.html">6.1 Благодарности</a></li><br>
+            <li><a href="python_test.html"> Итоговый тест по курсу</a></li><br>
+           
+        </ul>
+
+
+    </aside>
+    <footer>
+        <div class="footer">
+            <div>
+
+                <nav id="footer_panel">
+
+                    <ul class="footer_menu">
+                        <li>
+                            <div class="logo">
+                                <p>EAZY LEARNING.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="index.html">Главная</a>
+                        </li>
+
+                        <li>
+                            <a href="#">О нас</a>
+                            <ul>
+                                <li><a href="otzivy.php">Отзывы</a></li>
+                                <li><a href="missia.html">Вопросы</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="obrsv.html">Обратная связь</a>
+                        </li>
+                        <li>
+                            <a href="statyi.html">Полезная информация</a>
+                            <ul>
+                                <li><a href="otzivy.php">Памятка для первого урока</a></li>
+                                <li><a href="missia.html">Как выбрать компьютер для занятий</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="karta.html">Карта сайта</a>
+                        </li>
+
+
+
+                    </ul>
+
+
+                </nav>
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

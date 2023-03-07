@@ -387,8 +387,21 @@ article {
   grid-area: content;
 padding: 30px 20px 10px 20px;
 text-align: justify;
-/* min-height: 600px; */
+
 height: auto;
+
+padding-left: 10%;
+padding-right: 10%;
+}
+.code{
+  background-color: #ddd;
+  display: block;
+  padding: 8px;
+}
+.bg{
+  background-color: rgb(217, 224, 209);
+   border-radius:5px;
+   padding: 1px;
 }
 .imgtext{
   width: 60%;
@@ -403,9 +416,8 @@ width: 100%;
 }
 .table_text{
   text-align: center;
-padding-top: 60px;
-font-weight: bold;
-font-size: 25px;
+padding: 10px;
+font-size: 15px;
 }
 aside a:hover {
   color: #E98074;
@@ -430,11 +442,10 @@ aside {
   background-color: #E98074;
 
 }
+
 aside li{
   list-style-type:none;
-  padding-left:20px;
-  padding-right: 5px;
-  padding: 5px 5px 5px 10px;
+  padding: 5px 5px 5px 5px;
 }
 
 footer {

@@ -1,0 +1,302 @@
+<html>
+
+<head>
+    <title>Python</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+            <div>
+                <nav id="panel">
+                    <ul class="mainmenu">
+                        <li>
+                            <div class="logo">
+                                <p>EAZY LEARNING.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="index.html">Главная</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Курсы</a>
+                            <ul>
+                                <li><a href="course.html">Курсы от 16 лет </a></li>
+                                <li><a href="kids_course.html">Курсы для детей</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="feedback.html">Обратная связь</a>
+                        </li>
+                        <li>
+                            <a href="statyi.html">Контакты</a>
+                        </li>
+                        <li>
+                            <a href="karta.html">Карта сайта</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <p>Python-разработчик </p>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <article>
+
+
+        <h3>2.1 Учим компьютер выводить результат</h3>
+        <h2>Как вывести результат работы программы?</h2>
+        <center> <img style="width:400px" class="imgtext" src="p9.jpeg"></center>
+        <br>
+        <p>Первое чему мы научимся – выводить информацию в нашу консоль. Это нужно, чтобы видеть результаты работы нашей
+            программы.</p>
+
+        <p>Для вывода используется <b>функция</b> <span class="bg">print.</span> Чтобы вызвать ее достаточно добавить
+            круглые скобки.</p>
+
+        <code class="code">print()</code>
+
+        <br>
+        <p> Попробуйте запустить программу выше и вы увидите, что у вас печатается пустая строка. А как же выводить
+            текст? Для этого достаточно добавить его внутрь скобок в кавычках.</p>
+
+        <code class="code">print('python for backend')</code><br>
+        <p>Абсолютно не важно какие кавычки вы используете для этого, можно и так:</p>
+
+        <code class="code">print("python for backend")</code><br>
+        <p> Если говорить заумными терминами команда <span class="bg" class="bg">print</span> – это <b>функция.</b></p>
+
+        <p><span class="bg">Функция</span> – это такой литерал языка, который позволяет выполнять какие-то готовые
+            действия. Например функция
+            <span class="bg">print</span> выводит <span class="bg">аргумент</span>, который вы указали в круглых скобках
+            в консоль.
+        </p>
+
+        <p><span class="bg">Аргумент</span> – это то, что вы передаете в вашу функцию. В примере выше аргументом
+            является строка <span class="bg">"python for
+                backend".</span></p>
+
+        <p>Давайте выведем несколько строк в рамках одной программы. Например, пусть слова python for backend будут
+            каждое на новой строке.</p>
+
+        <code class="code">print('python')<br>
+            print('for')<br>
+            print('backend')<br></code>
+        <p> Функция <span class="bg">print</span> каждый раз выводит аргумент на новой строке. Это ее поведение по
+            умолчанию.</p>
+
+        <p>Теперь разделим наш вывод пустыми строками, чтобы текст не слипался.</p>
+
+        <code class="code">print('python')<br>
+            print()<br>
+            print('for')<br>
+            print()<br>
+            print('backend')</code>
+        <br>
+        <br>
+        <h2>Продолжаем разбираться с <span class="bg">print</span></h2>
+
+        <p>В функцию <span class="bg">print</span> также можно передать несколько аргументов, если перечислите их через
+            запятую.</p>
+
+        <p><span class="bg">#</span> – это комментарий к коду, мы с его помощью будем обозначать что выведет программа,
+            или писать какие-то
+            заметочки с пояснениями</p>
+
+        <code class="code">print('python', 'backend') # python backend<br>
+            print('python', 'for', 'backend') # python for backend</code>
+        <p>Аргументы, которые вы перечисляете через запятую называются позиционными. Иногда в функциях важно на какой
+            позиции стоит параметр, а иногда нет. В функции <span class="bg">print</span> от позиции зависит в какой
+            последовательности будут
+            напечатаны аргументы.</p>
+
+        <p>Позиционные аргументы при выводе разделяются пробелами. Разделение аргументов еще называют <b>сепарацией</b>
+            (от
+            слова separate - разделять). Вы можете заменить разделитель любой другой символ или строку, если укажете
+            <b>именованный аргумент </b><span class="bg">sep.</span>
+        </p>
+
+        <code class="code">print('python', 'for', 'backend', sep='->') # python->for->backend</code><br>
+        <p> Если указать пробел, то <span class="bg"> print</span> с <span class="bg"> sep</span> ничем не будет
+            отличаться от обычного.</p>
+
+        <code class="code">print('python', 'for', 'backend', sep=' ') # python for backend<br>
+            print('python', 'for', 'backend') # python for backend</code><br>
+        <p>Есть еще один именованный аргумент <span class="bg"> end.</span> Он отвечает за то, что будет напечатано в
+            конце каждой строки в
+            консоли. По умолчанию там печатается невидимый специальный символ <span class="bg"> \n</span>, который
+            переносит следующий вывод на
+            новую строку. Именно по этой причине <span class="bg"> print</span> каждый раз печатает на новой строке.
+            Давайте попробуем
+            переопределить <span class="bg"> end</span>.</p>
+
+        <code class="code">print('python', end='.')<br>
+            print('for')<br>
+            print('backend')</code>
+
+        <code class="code"># python.for<br>
+            # backend<br></code>
+        <p> Видно, что теперь у нас for прилип к python, потому что не было переноса на новую строку. Если его добавить,
+            то все снова будет нормально.</p>
+
+        <code class="code">print('python', end='.\n')<br>
+            print('for')<br>
+            print('backend')</code>
+
+        <code class="code"># python.<br>
+            # for<br>
+            # backend<br></code>
+        <p>Аргументы можно комбинировать друг с другом.</p>
+
+        <code class="code">print('python', 'for', sep=',', end='.\n')<br>
+            print('backend')</code>
+
+        <code class="code"># python,for.<br>
+            # backend<br></code>
+        <p>Причем если указать <span class="bg"> sep</span> в строке где только один позиционный аргумент, то это никак
+            не повлияет на вывод .
+        </p>
+
+        <code class="code">print('backend', sep='\n!\n') # backend</code>
+
+        <h2>Какие еще есть специальные символы, кроме <span class="bg"> \n?</span> </h2>
+
+        <p>Специальные символы можно использовать не только в именнованных аргументах, но и везде где есть строки. В
+            примере ниже мы вставляем <span class="bg">\n</span> в места, где хотим сделать новую строку.</p>
+
+        <code class="code">print('python\nfor\nbackend')
+
+        <p># python<br>
+            # for<br>
+            # backend<br></code>
+            <p>Из полезных специальных символов есть еще <span class="bg">\t.</span> Он позволяет вставить табуляцию в строку.</p>
+
+        <code class="code">print('python\tfor\tbackend') # python for backend</code><br>
+            <p>Также <span class="bg">\ </span>может быть полезен в случае, если вы хотите написать текст с кавычками. Без этого символа программа
+            выведет ошибку.</p>
+
+        <code class="code">print('python \'for\" backend') # python 'for" backend</code><br>
+            <p>Код который выкидывает ошибку: </p>
+
+        <code class="code">print('python 'for" backend')</code>
+<br>
+<center> <img style="width:400px" class="imgtext" src="p10.png"></center>
+        <br>
+        <p>Такие специальные символы еще называют экранированными последовательностями. Их много и они в основном
+            используются для форматирования текста. Ниже неполная табличка этих символов.</p><br>
+            <center> <img style="width:400px" class="imgtext" src="p11.png"></center>
+        <br>
+        <p><b>Если не хватило теории:</b><br>
+
+           <a href="https://pyprog.pro/python/py/str/esqape_sec.html"> Экранированные последовательности</a><br>
+            <a href="https://pyprog.pro/python/py/str/esqape_sec.html">Lexical Analysis</a></p>
+
+
+
+
+
+
+
+
+        <a class="button_next" href="python2.2.html"><img src="next.png"></a>
+    </article>
+    <aside>
+        1 Введение<br>
+        <ul>
+
+            <li><a href="python1.1.html">1.1 О курсе</a></li><br>
+            <li><a href="python1.2.html">1.2 Установка Python и IDE</a></li><br>
+            
+        </ul>
+        2  Данные<br>
+        <ul>
+            <li class="active"><a href="python2.1.html">2.1 Учим компьютер выводить результат</a></li><br>
+            <li><a href="python2.2.html">2.2 Типы данных и переменные</a></li><br>
+            <li><a href="python2.3.html">2.3 Возводим костыли</a></li><br>
+           
+        </ul>
+        3  Арифметические операции<br>
+        <ul>
+            <li><a href="python3.1.html">3.1 Целые числа</a></li><br>
+            <li><a href="python3.2.html">3.2 Числа с плавающей точкой </a></li><br>
+            <li><a href="python3.3.html">3.3 Битовые операции</a></li><br>
+            
+        </ul>
+        4  Основы Python: простые структуры данных и основные конструкции
+        <ul>
+            <li><a href="python4.1.html">4.1 Условия</a></li><br>
+            <li><a href="python4.1.html">4.2 Циклы</a></li><br>
+            <li><a href="python4.3.html">4.3 Работа со строками</a></li><br>
+           
+        </ul>
+        5 Основы Python: составные структуры данных и дополнения<br>
+        <ul>
+            <li><a href="python5.1.html">5.1 Списки и кортежи</a></li><br>
+            <li><a href="python5.2.html">5.2 Множества и словари</a></li><br>
+            <li><a href="python5.3.html">5.3 Стек, очерерь, куча и дек </a></li><br>
+            <li><a href="python5.4.html">5.4 Модули и библиотеки</a></li><br>
+        </ul>
+        6 Заключение<br>
+        <ul>
+            <li><a href="python6.1.html">6.1 Благодарности</a></li><br>
+            <li><a href="python_test.html"> Итоговый тест по курсу</a></li><br>
+           
+        </ul>
+
+
+    </aside>
+    <footer>
+        <div class="footer">
+            <div>
+
+                <nav id="footer_panel">
+
+                    <ul class="footer_menu">
+                        <li>
+                            <div class="logo">
+                                <p>EAZY LEARNING.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="index.html">Главная</a>
+                        </li>
+
+                        <li>
+                            <a href="#">О нас</a>
+                            <ul>
+                                <li><a href="otzivy.php">Отзывы</a></li>
+                                <li><a href="missia.html">Вопросы</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="obrsv.html">Обратная связь</a>
+                        </li>
+                        <li>
+                            <a href="statyi.html">Полезная информация</a>
+                            <ul>
+                                <li><a href="otzivy.php">Памятка для первого урока</a></li>
+                                <li><a href="missia.html">Как выбрать компьютер для занятий</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="karta.html">Карта сайта</a>
+                        </li>
+
+
+
+                    </ul>
+
+
+                </nav>
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
