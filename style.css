@@ -5,6 +5,32 @@ body {
 }
 
 /* content */
+.question{
+  padding: 5px 20px;
+  border-bottom: 1px solid #d1d1d1;
+  max-width: 100%;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: left;
+  font-size: 19px;
+  font-weight: 600;
+  }
+  .question span {
+  float: right;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  width: 30px;
+  height: 30px;
+  }
+  .content_q {
+  text-align: left;
+  font-size: 14px;
+  font-weight: 300;
+  display:none
+  }
 
 
 
