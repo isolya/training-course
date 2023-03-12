@@ -1,0 +1,777 @@
+<html>
+
+<head>
+    <title>Python</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+            <div>
+                <nav id="panel">
+                    <ul class="mainmenu">
+                        <li>
+                            <div class="logo">
+                                <p>EAZY LEARNING.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="../index.html">Главная</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Курсы</a>
+                            <ul>
+                                <li><a href="course.html">Курсы от 16 лет </a></li>
+                                <li><a href="kids_course.html">Курсы для детей</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="feedback.html">Обратная связь</a>
+                        </li>
+                        <li>
+                            <a href="contacts.html">Контакты</a>
+                        </li>
+                        <li>
+                            <a href="karta.html">Карта сайта</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <p>Python-разработчик </p>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <article>
+
+
+        <h3>3.3 Битовые операции</h3>
+        <h2>Системы счисления</h2>
+        <p>Для кого-то это уже не секрет, но стоит немного приоткрыть занавес такой темы, как системы счисления.</p>
+
+        <p>Существует много разных систем счисления: унарная, бинарная, тернарная и так далее на каждую цифру, причем
+            это только позиционные.</p>
+
+        <p>Сами системы счисления еще делятся на:</p>
+        <ul>
+            <li>позиционные</li> <br>
+            <li>непозиционные</li><br>
+            <li>смешанные</li><br>
+        </ul>
+        Причина по которой мы используем именно десятичную позиционную систему обусловлена 10-ю пальцами на наших руках
+        (всё-таки удобно считать же).</p>
+
+        <p>Мы рассмотрим подробнее только те, что используются в компьютере, чтобы было понимание как все это работает.
+        </p>
+
+        <h2>Двоичная система счисления</h2><br>
+        <p>Основная и самая главная система счисления для компьютера – двоичная или бинарная, которая состоит из 0 и 1.
+            Она
+            применяется во всех цифровых устройствах, как наиболее простая.</p>
+        <center>
+            <table width="70%" cellspacing="0" cellpadding="10">
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p style="text-align: center;"> <b>Десятичная система счисления</b></p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p> <b>Двоичная система счисления</b></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>0</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p> 0</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>1</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>1 </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>2</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>10 </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>3</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>11 </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>4</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p> 100</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>5</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>101 </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>6</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>110 </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>7</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>111 </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>8</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>1000 </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>9</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>1001 </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>10</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>1010 </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>11</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>1011 </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>12</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>1100 </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>13</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>1101 </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>14</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p> 1110</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>15</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>1111 </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <p>Легко заметить, что системы счисления устроены довольно просто. Если после прибавления единицы числа нет в
+            системе счисления – то просто увеличиваем следующий разряд на 1.</p>
+
+        <h2>Восьмеричная система счисления</h2><br>
+        <p>Далее как развитие двоичной системы появилась восьмеричная, состоящая из цифр от 0 до 7. Она используется в
+            областях связанных с цифровыми устройствами, т.к. можно легко переводить из 2 системы в 8 систему и обратно
+            (можете попробовать догадаться как). Сама же система счисления применяется в операционных системах Linux для
+            выставления прав на чтение/запись файлов (chmod).</p>
+        <center>
+            <table width="70%" cellspacing="0" cellpadding="10">
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p style="text-align: center;"> <b>Десятичная система счисления</b></p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p> <b>Восьмеричная система счисления</b></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>0</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p> 0</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>1</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>1 </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>2</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>2 </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>3</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>3</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>4</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p> 4</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>5</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>5 </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>6</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>6</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>7</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>7 </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>8</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>10 </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>9</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>11</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>10</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>12 </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>11</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>13 </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>12</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>14 </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>13</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>15 </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>14</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p> 16</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>15</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>17 </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <h2>Шестнадцатеричная система счисления</h2>
+        <p>Шестнадцатеричная система счисления уже состоит из 16 цифр: от 0 до 9 и от A до F. Почему нельзя обозначить
+            число А как 10? Потому что тут два разряда, а должен быть один. Эта система счисления используется например
+            для цвета изображений (#FFAA00) или для задания символов в кодировке Юникода.</p><br>
+        <center>
+            <table width="70%" cellspacing="0" cellpadding="10">
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p style="text-align: center;"> <b>Десятичная система счисления</b></p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p> <b>Восьмеричная система счисления</b></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>0</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p> 0</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>1</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>1 </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>2</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>2 </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>3</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>3</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>4</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p> 4</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>5</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>5 </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>6</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>6</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>7</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>7 </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>8</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>8 </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>9</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>9</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>10</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>A</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>11</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>B </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>12</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>C </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>13</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>D </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>14</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p> E</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="table_text" valign="top">
+                        <p>15</p>
+                    </td>
+                    <td valign="top" class="table_text">
+                        <p>F </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <h2>А что в Python?</h2>
+
+        <p> В языке существуют функции, позволяющие переводить в разные системы счисления, а так же просто обозначить,
+            что
+            число введенное с клавиатуры – в другой системе счисления.</p>
+        <code class="code">
+            <p>a = 10 # десятичная<br>
+                # перевод из разных систем счисления в десятичную<br>
+                b = int('10', 2) # двоичная<br>
+                c = int('17', 8) # восьмеричная<br>
+                d = int('1a', 16) # шестнадцатеричная<br>
+                print(a,b,c,d, end="\n") # 10 2 15 26</p>
+                
+                <p># перевод из десятичной в разные<br>
+                num = 37<br>
+                print(bin(num)) # 0b100101<br>
+                print(oct(num)) # 0o45<br>
+                print(hex(num)) # 0x25</p>
+        </code>
+        <h2>Память компьютера и длинная арифметика</h2>
+        <center> <img style="width:400px" class="imgtext" src="../img/p16.jpg"></center>
+        <br>
+        <p>Вам, как будущим backend разработчикам стоит лучше разобраться как устроена память в компьютере.</p>
+
+        <p>Память компьютера состоит из двоичных запоминающих элементов. Поэтому в ней могут храниться только двоичные
+            числа, где низшая единица объема данных – бит – 0 или 1. В некоторых устройствах ноль означает, что на
+            запоминающее устройство не подан ток, а единица – что подан, но обычно там в дело вступают электроны и
+            диэлектрики, и в зависимости от их количества будет либо 1, либо 0.</p>
+
+        <p>Если объединить в группу 8 бит, то получится байт. </p><br>
+        <center> <img style="width:400px" class="imgtext" src="../img/p17.png"></center>
+        <br>
+        <p>1 терабайт = 1024 гигабайт</p>
+
+        <p>1 гигабайт = 1024 мегабайт</p>
+
+        <p>1 мегабайт = 1024 килобайт</p>
+
+        <p>1 килобайт = 1024 байт</p>
+
+        <p>1 байт = 8 бит</p>
+
+        <p>Давайте рассмотрим однобайтовое запоминающее устройство подробнее.</p>
+
+        <p>Так как в одном байте 8 бит, то 1 байт может принимать <br>
+            2<sup>8</sup>= 256 различных значений.</p>
+
+
+
+        <p>Давайте представим, что мы храним в нашем запоминающем устройстве только положительные числа, тогда схема
+            хранения будет выглядеть примерно так:</p><br>
+        <center> <img style="width:400px" class="imgtext" src="../img/p18.png"></center>
+        <br>
+        <p>Что будет, если прибавить единицу к самому большому числу 255? Оно обнулится, так как следующего разряда у
+            этого однобайтового устройства не имеется. </p>
+        <p>11111111<sub>2</sub>+ 1 = 0</p>
+
+
+        <p>А как же тогда хранятся отрицательные числа? Дело в том, что обычно в запоминающих устройствах первая цифра
+            (бит) отвечает за знак числа. И тогда в одном байте помещается <br>
+            [−128...127] <br>
+            и схема хранения будет выглядеть так:
+        </p>
+
+        <center> <img style="width:400px" class="imgtext" src="../img/p18.png"></center><br>
+        <p>Современные процессоры имеют х64 разрядность (имеется в виду CISC архитектура), это означает, что каждый
+            регистр способен обрабатывать числа размерностью не более 24<sup>64</sup> = 18446744073709551616 &asymp;
+            10<sup>19</sup><br>
+            Причем выходит так, что половина этих значений уходит на отрицательные числа, и остается всего
+            &asymp; n * 10<sup>18</sup>
+            на знаковые числа. Числа больше этого значения процессор обрабатывать не может, потому что будет каждый раз
+            обнуляться при выходе за границы разрядности.
+        </p>
+        <p>А что нам делать если нужно посчитать 10<sup>11</sup>+ 10<sup>2</sup>? Ответ – длинная арифметика. </p>
+
+        <p>Нам повезло, что в Python не нужно задумываться о переполнении и выходах за границы, потому что тип int по
+            умолчанию имеет длинную арифметику под капотом и это позволяет нам работать со сколь угодно большими
+            числами. </p>
+
+        <p>Если интересно как работает длинная арифметика, то можно почитать о ней <a
+                href="https://ru.wikipedia.org/wiki/%D0%94%D0%BB%D0%B8%D0%BD%D0%BD%D0%B0%D1%8F_%D0%B0%D1%80%D0%B8%D1%84%D0%BC%D0%B5%D1%82%D0%B8%D0%BA%D0%B0">тут.</a>
+        </p>
+        <h2>math</h2>
+        <p>На этом шаге мы познакомимся с math.</p>
+
+        <code class="code">import math</code>
+        <p>В этой библиотеке есть множество полезных математических функций.</p>
+
+        <code class="code">import math
+
+<br><br>
+a = math.ceil(3.1) # 4<br>
+b = math.floor(3.9) # 3<br>
+c = math.pi # 3.141592...</code><br>
+        <p>Python так же позволяет импортировать определенные функции для использования. Но при использовании такого
+            способа имейте в виду, что в программе может возникнуть конфликт имен, если у вас например будет переменная
+            с названием импортируемой функции.</p>
+
+        <code class="code">from math import sqrt<br><br>
+
+a = sqrt(4) # 2</code><br>
+        Документация к библиотеке math: <a href="https://docs.python.org/3/library/math.html">тут.</a></p>
+
+        <h2>Битовые операции</h2><br>
+        <p> Битовые операции нужны для того, чтобы можно было взаимодействовать с числами на уровне битов.</p>
+
+        <p>В языке Python имеются такие битовые операции:</p>
+        <ul>
+            <li> Инверсия – ~</li><br>
+            <li> Сдвиг вправо – >></li><br>
+            <li> Сдвиг влево – &lt; &lt;</li><br>
+            <li> И – &</li><br>
+            <li> ИЛИ – |</li><br>
+            <li> XOR (Исключающее или) – ^</li>
+        </ul><br>
+        <p> Инверсия (~) меняет все 0 на 1 и 1 на 0 в двоичном представлении числа. По сути ~a = -a - 1, так что
+            можете смело не пользоваться инверсией.</p>
+<code class="code">
+        <p>print(~3) # -4</p>
+
+        <p># на тип int в Python отводится 4 байт<br>
+            # 3 = 0000 0000 0000 0011<br>
+            # ~3= 1111 1111 1111 1100 = -4, т.к. первый бит знаковый</code><br>
+            Сдвиг вправо (>>) можно применить для деления нацело на 2, а сдвиг влево ( &lt; &lt;) для умножения на 2.
+            Прирост
+            производительности эти методы не дают (хотя раньше это было не так), и еще и читаемость кода ухудшают,
+            поэтому можете смело ими не пользоваться. Сдвиг же означает, что разряды в двоичном представлении числа
+            сдвигаются влево или вправо на указанное количество разрядов.</p>
+            <code class="code">
+        <p>print(5 &lt; &lt; 2) # 20 (101 -> 10100)<br>
+            print(21 >> 3) # 2 (10101 -> 10)</p></code><br>
+          <p>  Битовая конъюнкция (&) и дизъюнкция (|) чаще всего применяются на практике при работе с сетями.
+            Работают они так же как и логическое И и логическое ИЛИ, только в мире двоичных чисел.</p>
+<ul>
+        <li>1 & 1 всегда = 1, а в остальных случаях будет 0 для битовой конъюнкции</li><br>
+        <li>    0 | 0 всегда = 0, а в остальных случаях будет 1 для битовой дизъюнкции</li><br>
+        </ul>
+        <code class="code">
+          <p>  print(5 & 3) # 1<br>
+            # 101<br>
+            # &<br>
+            # 011<br>
+            # ---<br>
+            # 001</p>
+
+        <p>print(5 | 3) # 7<br>
+            # 101<br>
+            # |<br>
+            # 011<br>
+            # ---<br>
+            # 111</p></code><br>
+            Исключающее или (^) применяют в качестве алгоритма шифрования и в качестве комбинаций с другими
+            алгоритмами. Если биты разные, тогда при XOR-е будет 1, иначе 0.</p>
+<code class="code">
+        <p>print(5 ^ 2) # 7<br>
+            # 101<br>
+            # ^<br>
+            # 010<br>
+            # ---<br>
+            # 111</p></code><br>
+           <p> Обычно, чтобы такой шифр было сложно расшифровать берут два огромных простых числа, и тогда перебор
+            ключей за реальное время не выполнится.</p>
+
+        <p>Одна из задач тысячелетия кстати затрагивает эту тему.</p>
+
+        <p><b>Шифрование:</b></p>
+
+        <p>число ^ ключ = шифрованное число</p>
+
+        <p><b>Дешифрование:</b></p>
+
+        <p>шифрованное число ^ ключ = число</p>
+
+        <br> <a class="button_next" href="html/python4.1.html"><img src="../img/next.png"></a>
+    </article>
+    <aside>
+        1 Введение<br>
+        <ul>
+
+            <li><a href="python1.1.html">1.1 О курсе</a></li><br>
+            <li><a href="python1.2.html">1.2 Установка Python и IDE</a></li><br>
+            
+        </ul>
+        2  Данные<br>
+        <ul>
+            <li><a href="python2.1.html">2.1 Учим компьютер выводить результат</a></li><br>
+            <li><a href="python2.2.html">2.2 Типы данных и переменные</a></li><br>
+            <li><a href="python2.3.html">2.3 Возводим костыли</a></li><br>
+           
+        </ul>
+        3  Арифметические операции<br>
+        <ul>
+            <li><a href="python3.1.html">3.1 Целые числа</a></li><br>
+            <li><a href="python3.2.html">3.2 Числа с плавающей точкой </a></li><br>
+            <li class="active"><a href="python3.3.html">3.3 Битовые операции</a></li><br>
+            
+        </ul>
+        4  Основы Python: простые структуры данных и основные конструкции
+        <ul>
+            <li><a href="python4.1.html">4.1 Условия</a></li><br>
+            <li><a href="python4.1.html">4.2 Циклы</a></li><br>
+            <li><a href="python4.3.html">4.3 Работа со строками</a></li><br>
+           
+        </ul>
+        5 Основы Python: составные структуры данных и дополнения<br>
+        <ul>
+            <li><a href="python5.1.html">5.1 Списки и кортежи</a></li><br>
+            <li><a href="python5.2.html">5.2 Множества и словари</a></li><br>
+            <li><a href="python5.3.html">5.3 Стек, очерерь, куча и дек </a></li><br>
+            <li><a href="python5.4.html">5.4 Модули и библиотеки</a></li><br>
+        </ul>
+        6 Заключение<br>
+        <ul>
+            <li><a href="python6.1.html">6.1 Благодарности</a></li><br>
+            <li><a href="python_test.html"> Итоговый тест по курсу</a></li><br>
+           
+        </ul>
+
+
+    </aside>
+
+    </aside>
+    <footer>
+        <div class="footer">
+            <div>
+    
+                <nav id="footer_panel">
+    
+                    <ul class="footer_menu">
+                        <li>
+                            <div class="logo">
+                                <p>EAZY LEARNING.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="../index.html" >Главная</a>
+                        </li>
+    
+                        <li>
+                            <p>О нас</p>
+                            <ul>
+                                <li><a href="comment.php">Отзывы</a></li>
+                                <li><a href="questions.html">Вопросы</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="feedback.html">Обратная связь</a>
+                        </li>
+                        <li>
+                            <p>Полезная информация</p>
+                            <ul>
+                                <li><a href="choosing_a_computer.html">Как выбрать компьютер для занятий</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="karta.html">Карта сайта</a>
+                        </li>
+    
+    
+    
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

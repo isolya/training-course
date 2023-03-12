@@ -1,6 +1,6 @@
-*.jpg
-*.jpeg
-*.png
-*.mp4
-*.svg
-*.gif
+/img/*.png
+/img/*.jpeg
+/img/*.jpg
+/img/*.svg
+/video/*.mp4
+/gif/*.gif
