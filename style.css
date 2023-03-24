@@ -178,13 +178,12 @@ div.right_col {
   font-size: 25px;
 }
 /* header */
-li .logo {
+.topmenu .logo {
   text-align: left;
   font-size: 15px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 0;
   margin-top: 10px;
-  margin-right: 60px;
+  margin-right: 50px;
   margin-left: 20px;
   font-weight: bold;
   position: relative;
@@ -203,6 +202,7 @@ h2 {
   background-color: rgb(0, 0, 0);
   height: 700px;
   color: #ffffff;
+ 
 }
 
 .header:before {
@@ -218,11 +218,11 @@ h2 {
 }
 
 .header-text {
-  position: fixed;
+ position: relative;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 10%;
   font-size: 60px;
-  position: relative;
+  
 }
 
 .age {
@@ -238,73 +238,79 @@ h2 {
     grid-template-rows: 1fr ;
   }
 }
-#panel {
-  display: block;
-  margin: auto;
-  width: 100%;
-  font-size: 18px;
 
-}
-
-/* убираем отступы и поля, а также list-style для "ul", 
-			 * и добавляем "position:relative" */
-#panel ul {
-  padding: 0;
-  margin: 0;
+nav ul {
+  position: relative;
   list-style: none;
-  position: relative;
-
-  background-color: rgba(20, 18, 18, 0.7);
-
+  margin: 0;
+  padding: 0;
 }
-
-/* применяем inline-block позиционирование к элементам навигации */
-#panel ul li {
-  margin: 0px -8px 0 0;
-  display: inline-block;
-
-}
-
-/* стилизуем ссылки */
-#panel a {
+nav a {
   display: block;
-
-  color: #ffffff;
-  font-size: 100%;
-  line-height: 60px;
   text-decoration: none;
-  padding: 0px 80px 0px 20px;
+  outline: none;
+  transition: .4s ease-in-out;
+}
+.topmenu {
+  list-style: none;
+  background: rgba(0, 0, 0);
+  width: 100%; 
+  top:0;
+  position: fixed;
+  z-index: 9999;
 }
 
-/* изменяем цвет фона при наведении курсора */
-#panel a:hover {
-  color: #E98074;
-}
-
-#panel ul ul {
-  display: none;
-  position: absolute;
-  top: 100%;
-  z-index: 10;
-  background-color: rgba(20, 18, 18, 0.7);
-}
-
-/* отображаем выпадающий список при наведении */
-#panel ul li:hover>ul {
-  display: inherit;
-
-}
-
-/* первый уровень выпадающего списка */
-#panel ul ul li {
-  min-width: 170px;
-  float: none;
-  display: list-item;
+.topmenu > li {
+  display: inline-block;
   position: relative;
+
+  
+}
+.topmenu > li > a {
+
+  line-height: 50px;
+  padding: 0px 30px;
+  color: #ffffff;
+ 
+}
+.topmenu > li .logo > a {
+
+  line-height: 50px;
+  padding: 0px 10px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
-
-
+.down:after {
+  margin-left: 8px;
+}
+.topmenu li a:hover { color: #E6855F; }
+.submenu {
+  background: rgba(0, 0, 0);
+  position: absolute;
+  left: 0;
+  
+  visibility: hidden;
+  opacity: 0;
+  z-index: 5;
+  width: 250px;
+  transform: perspective(600px) rotateX(-90deg);
+  transform-origin: 0% 0%;
+  transition: .6s ease-in-out;
+}
+.topmenu > li:hover .submenu{
+  visibility: visible;
+  opacity: 1;
+  transform: perspective(600px) rotateX(0deg);
+}
+.submenu li a {
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 36px;
+  padding: 10px 25px;
+  
+}
 /* footer */
 
 .footer {
@@ -312,7 +318,7 @@ h2 {
   padding-top: 40px;
   color: #ffffff;
   clear: left;
-  height: 300px;
+  height: 100px;
 }
 
 .footer_menu {
@@ -326,55 +332,6 @@ h2 {
   }
 }
 
-#footer_panel {
-  display: block;
-  
-  width: 100%;
-  font-size: 15px;
-}
-
-#footer_panel ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  position: relative;
-  font-weight: bold;
-}
-
-#footer_panel ul li {
-  margin: 0px -1px 0 0;
-  display: inline-block;
-
-}
-
-#footer_panel a {
-  display: block;
-  color: #ffffff;
-  font-size: 100%;
-  line-height: 60px;
-  text-decoration: none;
-  padding: 0px 0px 0px 5px;
-}
-
-#footer_panel a:hover {
-  color: #E98074;
-}
-
-#footer_panel ul ul {
-  display: none;
-  position: absolute;
-  top: 100%;
-  font-weight: lighter;
-}
-
-#footer_panel ul li>ul {
-  display: block;
-}
-
-#footer_panel ul ul li {
-  display: list-item;
-  position: relative;
-}
 
 /* maket */
 body {
